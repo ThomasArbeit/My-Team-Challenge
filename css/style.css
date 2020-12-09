@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 920px;
+  margin: auto;
+  padding: 110px 20px;
+}
+
+.coder {
+  font-family: Poppins;
+  text-align: center;
+  color: #a1a1a1;
+  margin-bottom: 40px;
+}
+
+.presentation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 96px;
+}
+@media (max-width: 750px) {
+  .presentation {
+    flex-direction: column;
+  }
+}
+.presentation__title {
+  font-family: "PT Serif";
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -4.5%;
+}
+@media (max-width: 750px) {
+  .presentation__title {
+    margin-bottom: 38px;
+  }
+}
+.presentation__article {
+  font-family: Poppins;
+  width: 50%;
+}
+@media (max-width: 750px) {
+  .presentation__article {
+    width: 100%;
+  }
+}
+.presentation__subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+.presentation__paragraph {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+@media (max-width: 750px) {
+  .presentation__paragraph {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.crewmate {
+  position: relative;
+}
+.crewmate:nth-child(3n-1) {
+  margin-top: 90px;
+}
+@media (max-width: 850px) {
+  .crewmate:nth-child(2n) {
+    margin-top: 50px;
+  }
+  .crewmate:nth-child(5) {
+    margin-top: 0;
+  }
+}
+.crewmate img {
+  width: 89%;
+  margin-bottom: 10px;
+}
+.crewmate small {
+  font-family: "PT Serif";
+  width: 100%;
+  position: absolute;
+  top: -17px;
+  right: -90%;
+  transform: rotate(90deg);
+  transform-origin: left bottom;
+}
+.crewmate__name {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+@media (max-width: 425px) {
+  .crewmate__name {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.galery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 40px;
+}
+@media (max-width: 850px) {
+  .galery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 27px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

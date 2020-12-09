@@ -1,0 +1,50 @@
+.crewmate{
+    position: relative;
+
+    &:nth-child(3n-1){
+        margin-top: 90px;
+    }
+
+    @media (max-width: 850px){
+        &:nth-child(2n){
+            margin-top: 50px;
+        }
+
+        &:nth-child(5){
+            margin-top: 0;
+        }
+    }
+
+    img{
+        width: 89%;
+        margin-bottom: 10px;
+    }
+
+    small{
+        font-family: "PT Serif";
+
+        width: 100%;
+
+        position: absolute;
+        top: -17px;
+        right: -90%;
+
+        transform: rotate(90deg);
+        transform-origin: left bottom;
+
+        
+    }
+
+
+    &__name{
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+
+        @media (max-width: 425px){
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+}
